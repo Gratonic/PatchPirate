@@ -1,5 +1,5 @@
 # PatchPirate
-Github Recon/OSINT Software for finding personal email adresses 
+Github Recon/OSINT Software for finding personal email adresses .
 
 PatchPirate is a Recon/OSINT software for mass processing GitHub commit and repo data to find unintentionally exposed private email addresses from a GitHub username or account via the GitHub API.
 
