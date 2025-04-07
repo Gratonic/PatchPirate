@@ -16,6 +16,11 @@ GitHub imposes a rate limmit on unauthenticated users for API access of 60 reque
 If 60 requests is not going to be enough, you can authenticated using a Personal Acess Token (PAT) and unlock up to 5000 requests an hour. [How do I get one](https://www.geeksforgeeks.org/how-to-generate-personal-access-token-in-github/)?
 
 ## Screenshots
-Coming soon.
+![Menu](Screenshots/menu.png)
+![Hunting](Screenshots/hunting.png)
+![Found](Screenshots/found.png)
+
+
+
 
 
