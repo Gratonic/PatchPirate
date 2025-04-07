@@ -1,6 +1,4 @@
 import requests
-import re
-import time
 from halo import Halo
 from colorama import Fore, init
 from datetime import datetime
