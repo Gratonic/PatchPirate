@@ -8,6 +8,10 @@ from datetime import datetime
 # Initialize colorama with auto reset
 init(autoreset=True)
 
+# Initialize loading indicator
+working_indicator = Halo(text=f'Searching user commits...', spinner='pong')
+
+
 # program banner
 banner = r"""
  ______                  _     ______ _                         
@@ -51,11 +55,11 @@ def get_user_commits(username):
 
     print(f"{Fore.BLUE}Found {len(repos)} repositories for user {Fore.RED}{username}{Fore.BLUE}.")
 
+    working_indicator.start()
     for repo in repos:
         repo_name = repo['name']
         owner = repo['owner']['login']
-        print(f"{Fore.LIGHTBLACK_EX}Checking commits in repository: {repo_name}")
-        
+
         page = 1
         while True:
             url = f"https://api.github.com/repos/{owner}/{repo_name}/commits?author={username}&page={page}&per_page=100"
@@ -63,7 +67,6 @@ def get_user_commits(username):
             if response.status_code == 403:
                 handle_rate_limit(response)
             elif response.status_code != 200:
-                print(f"Error fetching commits from {repo_name}: {response.status_code}")
                 break
             data = response.json()
             if not data:
@@ -78,6 +81,7 @@ def get_user_commits(username):
                     'email': commit['commit']['author']['email']
                 })
             page += 1
+    working_indicator.stop()
     return commits
 
 # Handle GitHub rate limiting errors
@@ -94,6 +98,7 @@ if __name__ == "__main__":
     username = input(f"{Fore.GREEN}Enter GitHub username: ").strip()
     email_addresses = set()
     obfuscated = ""
+    
     try:
         user_commits = get_user_commits(username)
         print(f"\n{Fore.BLUE}Total commits found: {Fore.RED}{len(user_commits)}")
