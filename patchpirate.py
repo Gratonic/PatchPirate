@@ -101,7 +101,7 @@ if __name__ == "__main__":
     
     try:
         user_commits = get_user_commits(username)
-        print(f"\n{Fore.BLUE}Total commits found: {Fore.RED}{len(user_commits)}")
+        print(f"{Fore.BLUE}Total commits found: {Fore.RED}{len(user_commits)}")
         print("---------------------------------------------------------------------")
 
         for commit in user_commits:
