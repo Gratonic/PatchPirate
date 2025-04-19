@@ -761,6 +761,14 @@
   },
   {
     "repo": "PatchPirate",
+    "message": "Finished the python side of the program, everything is now ready. It works much faster with the rust module. I also cleaned up the code a ton and added more comments",
+    "url": "https://github.com/Gratonic/PatchPirate/commit/295dedcf387c22dcb453c03d492e7922ac953f6e",
+    "date": "2025-04-19T18:33:57Z",
+    "sha": "295dedc",
+    "email": "189929383+Gratonic@users.noreply.github.com"
+  },
+  {
+    "repo": "PatchPirate",
     "message": "Still working on the python side, having to rewrite it because I accidently deleted it",
     "url": "https://github.com/Gratonic/PatchPirate/commit/4721a8d02c8d9e8a1b84093bc135a4ca1932dcfe",
     "date": "2025-04-19T10:12:34Z",

@@ -1,3 +1,15 @@
+# :: Program Information :: #
+
+"""
+Program Name: PatchPirate
+Description: A brief description of what your program does.
+Authors: Br0k3nPix3l (https://github.com/FailurePoint) and Gratonic (https://github.com/Gratonic)
+License: MIT
+Date: 4/19/2025
+Version: 1.1.0
+"""
+
+
 # :: Imports :: #
 
 from colorama import Fore, init # Copywrite (c) 2013-2025, Jonathan Hartley (https://github.com/tartley)
@@ -29,7 +41,7 @@ banner = r"""
 
    BY: ┳┓  ┏┓┓ ┏┓  ┏┓•  ┏┓┓     ┏┓         • 
        ┣┫┏┓┃┫┃┏ ┫┏┓┃┃┓┓┏ ┫┃     ┃┓┏┓┏┓╋┏┓┏┓┓┏
-       ┻┛┛ ┗┛┛┗┗┛┛┗┣┛┗┛┗┗┛┗ and ┗┛┛ ┗┻┗┗┛┛┗┗┗  Version: 1.0.1   
+       ┻┛┛ ┗┛┛┗┗┛┛┗┣┛┗┛┗┗┛┗ and ┗┛┛ ┗┻┗┗┛┛┗┗┗  Version: 1.1.0   
 -----------------------------------------------------------------
 """
 
@@ -40,7 +52,6 @@ def clear_data_dir():
     os.remove("./data/input_file.json")
     os.remove("./data/output_file.json")
     os.remove("./data/repo_count.txt")
-
 
 def collect_user_input():
     # loads the username variable into the function because it is modified and will be used later
