@@ -9,7 +9,6 @@ Date: 4/19/2025
 Version: 1.1.0
 """
 
-
 # :: Imports :: #
 
 from colorama import Fore, init # Copywrite (c) 2013-2025, Jonathan Hartley (https://github.com/tartley)
