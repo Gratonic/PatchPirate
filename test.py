@@ -1,8 +1,8 @@
-from colorama import Fore, init # Copywrite (c) 2013-2025, Jonathan Hartley (https://github.com/tartley)
-from halo import Halo # Copywrite (c) 2016-2025, Singh
-import patchpirate # Copywrite (c) 2025, Gratonic (https://github.com/Gratonic)
 import json
+import patchpirate
+from halo import Halo
 import os
+from colorama import Fore, init
 
 # Initialize colorama with auto reset
 init(autoreset=True)
@@ -21,7 +21,7 @@ banner = r"""
 
    BY: ┳┓  ┏┓┓ ┏┓  ┏┓•  ┏┓┓     ┏┓         • 
        ┣┫┏┓┃┫┃┏ ┫┏┓┃┃┓┓┏ ┫┃     ┃┓┏┓┏┓╋┏┓┏┓┓┏
-       ┻┛┛ ┗┛┛┗┗┛┛┗┣┛┗┛┗┗┛┗ and ┗┛┛ ┗┻┗┗┛┛┗┗┗  Version: 1.0.1   
+       ┻┛┛ ┗┛┛┗┗┛┛┗┣┛┗┛┗┗┛┗ and ┗┛┛ ┗┻┗┗┛┛┗┗┗ Version: 1.0.1   
 -----------------------------------------------------------------
 """
 
