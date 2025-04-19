@@ -138,8 +138,10 @@ venv.bak/
 # mkdocs documentation
 /site
 
-# data directory
-/data
+# ignores program data that has been generated from tests
+input_file.json
+output_file.json
+repo_count.txt
 
 # mypy
 .mypy_cache/
